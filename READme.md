@@ -1,0 +1,1 @@
+This is a children's E-commerce project . The project is built using React, Redux, and Node.js. The project is designed to allow
