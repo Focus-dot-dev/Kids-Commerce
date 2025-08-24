@@ -58,7 +58,7 @@ const products = [
     name: "Boys' Kaftan",
     price: 42.99,
     rating: 4.7,
-    image: "/src/assets/kaftan.png",
+    image: "/src/assets/man-kaftan.png",
     category: "boys",
     age: "5-10",
     isNew: true,
@@ -68,7 +68,7 @@ const products = [
     name: "Girls' Beaded Dress",
     price: 38.99,
     rating: 4.8,
-    image: "/src/assets/beaded-dress.png",
+    image: "/src/assets/red-bead-dress.png",
     category: "girls",
     age: "2-5",
     isNew: false,
@@ -78,7 +78,7 @@ const products = [
     name: "Boys' Traditional Shirt",
     price: 29.99,
     rating: 4.5,
-    image: "/src/assets/traditional-shirt.png",
+    image: "/src/assets/shirt.png",
     category: "boys",
     age: "4-10",
     isNew: false,
@@ -120,7 +120,7 @@ export default function FeaturedProducts() {
               className={`rounded-full ${
                 activeFilter === filter.id
                   ? "bg-amber-500 hover:bg-red-700 text-white cursor-pointer px-4 py-2"
-                  : "border-purple-200 text-white cursor-pointer hover:border-purple-400"
+                  : "border-purple-200 text-white cursor-pointer hover:border-yellow-400"
               }`}
               onClick={() => setActiveFilter(filter.id)}
             >
@@ -173,7 +173,7 @@ export default function FeaturedProducts() {
               </div>
 
               <div className="p-4 pt-0">
-                <button className="w-full bg-black text-white hover:bg-purple-700 rounded-full flex items-center justify-center">
+                <button className="w-full bg-black text-white hover:bg-yellow-700 rounded-full flex items-center justify-center">
                   <ShoppingCart className="h-4 w-4 mr-2" />
                   Add to Cart
                 </button>
@@ -183,7 +183,7 @@ export default function FeaturedProducts() {
         </div>
 
         <div className="text-center mt-10">
-          <button className="bg-white text-orange-600 rounded-full px-8 hover:bg-purple-100 hover:text-blue-600 transition-colors font-medium py-2">
+          <button className="bg-white text-orange-600 rounded-full px-8 hover:bg-yellow-300 hover:text-blue-600 transition-colors font-medium py-2">
             View All Attires
           </button>
         </div>

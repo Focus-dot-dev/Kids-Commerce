@@ -46,7 +46,7 @@ export default function CategorySection() {
       <div className="container px-4 bg-stone-600 p-8">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-gray-800">Clothing Categories for Kids</h2>
-          <p className="text-gray-300 mt-2">Explore a wide range of clothing options for kids of all ages</p>
+          <p className="text-gray-300 my-5">Explore a wide range of clothing options for kids of all ages</p>
         </div>
 
         {/* Display only the first 3 categories */}
@@ -67,7 +67,7 @@ export default function CategorySection() {
         <div className="text-center mt-8">
           <Link
             to="/categories"
-            className="text-white font-medium hover:text-purple-700 transition-colors"
+            className="text-white font-medium hover:text-yellow-400 transition-colors"
           >
             View More Categories
           </Link>

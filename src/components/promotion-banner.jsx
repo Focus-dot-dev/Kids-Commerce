@@ -1,79 +1,49 @@
-import React from "react";
+import React from 'react';
 
-
-export default function PromotionBanner() {
+const Promo = () => {
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        {/* Main Promotion */}
-        <div className="bg-brown-400 rounded-3xl overflow-hidden shadow-lg mb-8">
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2 p-8 md:p-12 text-white">
-              <span className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
-                Limited Time Offer
-              </span>
-              <h2 className="text-2xl md:text-4xl font-bold mb-4">Summer Sale!</h2>
-              <p className="text-white/90 mb-6 text-lg">
-                Get up to 40% off on selected outdoor toys and games. Perfect for summer adventures!
-              </p>
-              <button className="bg-white text-purple-600 hover:bg-gray-100 rounded-full px-8">Shop the Sale</button>
-            </div>
-            <div className="md:w-1/2 relative h-64 md:h-80 w-full">
-              <img
-                src="/placeholder.svg?height=400&width=600"
-                alt="Summer sale promotion"
-                className="object-contain w-full h-full"
-              />
-            </div>
-          </div>
+    <section 
+      className="bg-gray-500 text-white p-6 flex flex-col items-center justify-between overflow-hidden"
+      aria-label="Promotion Banner"
+    >
+      {/* Scrolling Text */}
+      <div className="w-full mb-6">
+        <marquee className="text-lg font-semibold">
+          🌞 Summer Sale is Here! Enjoy up to 50% OFF on selected items! 🌴
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          
+        </marquee>
+      </div>
+
+      {/* Main Content */}
+      <div className="flex flex-col md:flex-row items-center justify-around w-full">
+        {/* Text Content */}
+        <div className="flex flex-col items-start md:items-center md:text-center space-y-4 md:space-y-6">
+          <h1 className="text-3xl font-bold">
+            Summer Sale is Here!
+          </h1>
+          <p className="text-lg">
+            Refresh your wardrobe with our exclusive summer collection. <br /> Enjoy up to <span className="font-bold">50% OFF</span> on selected items!
+          </p>
+          <button 
+            className="bg-yellow-400 text-blue-500 font-semibold py-2 px-6 rounded hover:bg-yellow-300 transition"
+            onClick={() => window.location.href = '/shop'}
+          >
+            Shop Now
+          </button>
         </div>
 
-        {/* Secondary Promotions */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Promotion 1 */}
-          <div className="bg-yellow-100 rounded-3xl overflow-hidden shadow-sm">
-            <div className="flex flex-col sm:flex-row items-center">
-              <div className="sm:w-1/2 p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">New Arrivals</h3>
-                <p className="text-gray-600 mb-4">Check out our latest educational toys for all ages</p>
-                <button
-                  variant="outline"
-                  className="border-yellow-500 text-yellow-700 hover:bg-yellow-200 rounded-full"
-                >
-                  Explore Now
-                </button>
-              </div>
-              <div className="sm:w-1/2 relative h-40 w-full">
-                <img
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="New educational toys"
-                  className="object-contain w-full h-full"
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* Promotion 2 */}
-          <div className="bg-green-100 rounded-3xl overflow-hidden shadow-sm">
-            <div className="flex flex-col sm:flex-row items-center">
-              <div className="sm:w-1/2 p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">Free Shipping</h3>
-                <p className="text-gray-600 mb-4">On all orders over $50. Limited time offer!</p>
-                <button variant="outline" className="border-green-500 text-green-700 hover:bg-green-200 rounded-full">
-                  Shop Now
-                </button>
-              </div>
-              <div className="sm:w-1/2 relative h-40 w-full">
-                <img
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Free shipping promotion"
-                  className="object-contain w-full h-full"
-                />
-              </div>
-            </div>
-          </div>
+        {/* Image */}
+        <div className="mt-6 md:mt-0 md:ml-8">
+          <img 
+            src="/src/assets/summer-clothes.webp" 
+            alt="Summer Clothes Collection" 
+            className="w-64 h-auto rounded-lg shadow-lg"
+          />
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default Promo;
