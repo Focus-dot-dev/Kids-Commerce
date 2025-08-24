@@ -3,7 +3,7 @@ import React from 'react';
 const Promo = () => {
   return (
     <section 
-      className="bg-gray-500 text-white p-6 flex flex-col items-center justify-between overflow-hidden"
+      className="bg-stone-600 text-white p-6 flex flex-col items-center justify-between overflow-hidden"
       aria-label="Promotion Banner"
     >
       {/* Scrolling Text */}
@@ -26,7 +26,7 @@ const Promo = () => {
             Refresh your wardrobe with our exclusive summer collection. <br /> Enjoy up to <span className="font-bold">50% OFF</span> on selected items!
           </p>
           <button 
-            className="bg-yellow-400 text-blue-500 font-semibold py-2 px-6 rounded hover:bg-yellow-300 transition"
+            className="bg-yellow-400 text-blue-500 font-semibold py-2 px-6 rounded hover:bg-yellow-900 hover:text-white transition cursor-pointer"
             onClick={() => window.location.href = '/shop'}
           >
             Shop Now
@@ -34,7 +34,7 @@ const Promo = () => {
         </div>
 
         {/* Image */}
-        <div className="mt-6 md:mt-0 md:ml-8">
+        <div className="my-6 md:mt-0 md:ml-8">
           <img 
             src="/src/assets/summer-clothes.webp" 
             alt="Summer Clothes Collection" 
